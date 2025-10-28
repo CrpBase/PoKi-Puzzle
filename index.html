@@ -503,15 +503,13 @@ document.getElementById('downloadShareBtn').addEventListener('click', ()=>{
 document.getElementById('shareXBtn').addEventListener('click', ()=>{
   const timeTxt = document.getElementById('time').textContent.trim();
   const txt = [
-    'PoKi Puzzle for @SentientAGI',
+    'PoKi Puzzle for @GoKiteAI',
     '',
     `I just solved the PoKi Puzzle by @crpbase in ${timeTxt}!`,
     '',
-    'Try to beat my time: https://crpbase.github.io/Dobby-Puzzle/',
+    'Try to beat my time: https://crpbase.github.io/PoKi-Puzzle/',
     '',
-    'Art by @KatuntheOG',
-    '',
-    '#ChallengeDobbyPuzzle'
+    '#ChallengePoKiPuzzle'
   ].join('\n');
   const url='https://twitter.com/intent/tweet?text='+encodeURIComponent(txt);
   window.open(url,'_blank');
